@@ -7,7 +7,16 @@
     <title>email</title>
 </head>
 <body>
-    
+    <div class="app">
+        <h1>LISTA EMAIL</h1>
+        <ul>
+            <ol v-for="email in emailList">
+                {{ email }}
+            </ol>
+        </ul>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="myscript.js"></script>
