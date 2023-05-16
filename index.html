@@ -9,10 +9,11 @@
 <body>
     <div class="app">
         <h1>LISTA EMAIL</h1>
-        <ul>
-            <ol v-for="email in emailList">
+        <p v-if="emailList.length < 10">Loading....</p>
+        <ul v-else>
+            <li v-for="email in emailList">
                 {{ email }}
-            </ol>
+            </li>
         </ul>
     </div>
 
